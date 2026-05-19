@@ -1,1 +1,143 @@
-<h1>Portfolio Data Analyst</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analyst Portfolio - Rojo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .tech-tag {
+            background: #e0e0e0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 5px 5px 0 0;
+            display: inline-block;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+        .btn-github {
+            background: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #333;
+            color: white;
+        }
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 [Ton Nom]</h1>
+        <p>Data Analyst | Business Intelligence | Passionné par les données</p>
+        <p>📅 Disponible pour stage / alternance à partir de juin 2026</p>
+    </div>
+
+    <div class="container">
+        <h2>🎯 À propos de moi</h2>
+        <p>Passionné par l'univers des données, je recherche un stage ou une alternance en Data Analyst / BI. Curieux, rigoureux et motivé par l'impact business des données.</p>
+        
+        <h2 style="margin-top: 40px;">🛠️ Compétences</h2>
+        <div>
+            <span class="tech-tag">🐍 Python (Pandas, Matplotlib)</span>
+            <span class="tech-tag">📊 SQL (PostgreSQL, SQLite)</span>
+            <span class="tech-tag">📈 Power BI / Tableau</span>
+            <span class="tech-tag">🐳 Docker</span>
+            <span class="tech-tag">🗄️ ETL / Data Cleaning</span>
+            <span class="tech-tag">📉 Data Visualization</span>
+            <span class="tech-tag">🔍 Gouvernance des données</span>
+        </div>
+
+        <h2 style="margin-top: 40px;">🚀 Projets</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>🔮 ChurnGuard - Prédiction de churn client</h3>
+                <p>API de prédiction avec FastAPI, modèle ML (Gradient Boosting), dashboard interactif, authentification par token. Déployé sur Hugging Face.</p>
+                <div>
+                    <span class="tech-tag">FastAPI</span>
+                    <span class="tech-tag">Scikit-learn</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">SQLite</span>
+                </div>
+                <a href="https://huggingface.co/spaces/NARINDRANJANAHARY/churn_client_prediction" class="btn" target="_blank">Voir le projet</a>
+                <a href="https://github.com/tonusername/churnguard" class="btn btn-github" target="_blank">GitHub</a>
+            </div>
+
+            <div class="project-card">
+                <h3>📊 Dashboard Commercial Power BI</h3>
+                <p>Dashboard interactif analysant les ventes par région, produit, et période. KPIs dynamiques et filtres croisés.</p>
+                <div>
+                    <span class="tech-tag">Power BI</span>
+                    <span class="tech-tag">DAX</span>
+                    <span class="tech-tag">Power Query</span>
+                </div>
+                <a href="#" class="btn" target="_blank">Voir le dashboard</a>
+            </div>
+
+            <div class="project-card">
+                <h3>🏠 Analyse Airbnb Paris</h3>
+                <p>Analyse exploratoire des données Airbnb : prix par quartier, disponibilité, tendances saisonnières.</p>
+                <div>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Matplotlib</span>
+                    <span class="tech-tag">Jupyter</span>
+                </div>
+                <a href="#" class="btn btn-github" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>📧 ton.email@example.com | 🔗 <a href="https://linkedin.com/in/tonlinkedin" style="color:white">LinkedIn</a> | 🐙 <a href="https://github.com/tonusername" style="color:white">GitHub</a></p>
+        <p>📅 Disponible pour stage / alternance à partir de juin 2026</p>
+    </footer>
+</body>
+</html>

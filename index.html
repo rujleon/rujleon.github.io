@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <title>Data Analyst Portfolio - Rojo Leon</title>
+    <title>Data Science & Analytics Portfolio - Rojo Leon</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
@@ -74,6 +74,42 @@
             font-size: 1.1rem;
             color: var(--text-main);
             max-width: 800px;
+        }
+
+        .section-split {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .timeline-item {
+            background: var(--card-bg);
+            border-left: 4px solid var(--primary);
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 0 8px 8px 0;
+            border-top: 1px solid #e2e8f0;
+            border-right: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            color: var(--bg-dark);
+            margin: 5px 0;
+        }
+
+        .timeline-location {
+            font-size: 0.9rem;
+            color: var(--text-light);
         }
 
         .tech-container {
@@ -179,6 +215,13 @@
             background: #0f172a;
         }
 
+        .btn-disabled {
+            background-color: #cbd5e1;
+            color: #94a3b8;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
         footer {
             text-align: center;
             padding: 40px 20px;
@@ -207,6 +250,7 @@
 
         @media (max-width: 768px) {
             .header h1 { font-size: 2rem; }
+            .section-split { grid-template-columns: 1fr; }
             .project-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -214,32 +258,74 @@
 <body>
 
     <div class="header">
-        <h1>📊 NARINDRANJANAHARY Rojo Leon</h1>
-        <p>Junior Data Scientist & Analytics Engineer</p>
+        <h1>📊 NARINDRANJANAHARY Rojo Léon</h1>
+        <p>Stagiaire Data Analyst / BI & Data Scientist Passionné</p>
         <div class="badge">📅 Disponible pour stage / alternance dès Juin 2026</div>
     </div>
 
     <div class="container">
         <h2>🎯 À propos de moi</h2>
         <p class="about-text">
-            Passionné par l'ingénierie des données et le cycle de vie complet de la data, je me spécialise dans la création de pipelines ETL rigoureux, le déploiement de modèles de Machine Learning via des architectures modernes (APIs, conteneurisation) et la valorisation business à travers des outils décisionnels (BI).
+            En tant qu'étudiant en Master de Gouvernance et Ingénierie des Données à l'École Nationale d'Informatique (ENI), j'ai choisi de me spécialiser en Data Science et en analyse des données. Ma formation solide, appuyée par une licence en Mathématiques et Informatique, m'a permis d'acquérir une expérience pratique significative à travers le développement de solutions basées sur le Machine Learning et le Deep Learning.
         </p>
         
         <h2>🛠️ Compétences techniques</h2>
         <div class="tech-container">
-            <span class="tech-tag">🐍 Python (Pandas, Scikit-Learn)</span>
-            <span class="tech-tag">📊 SQL (PostgreSQL, SQLite)</span>
-            <span class="tech-tag">📈 Power BI & Tableau</span>
-            <span class="tech-tag">🐳 Docker & Docker Compose</span>
-            <span class="tech-tag">⚡ FastAPI & Flask</span>
-            <span class="tech-tag">🗄️ Architecture ETL / Data Pipeline</span>
-            <span class="tech-tag">🔍 Gouvernance & Qualimétrie des données</span>
+            <span class="tech-tag">🐍 Python (Pandas, NumPy, Scikit-Learn)</span>
+            <span class="tech-tag">📊 SQL (MySQL, PostgreSQL, MongoDB, SQLite)</span>
+            <span class="tech-tag">📈 Power BI, Tableau & Knime</span>
+            <span class="tech-tag">🐳 Docker & MLOps / DevOps (CI/CD, API REST Flask & FastAPI)</span>
+            <span class="tech-tag">🧠 Deep Learning (TensorFlow, Keras, PyTorch)</span>
+            <span class="tech-tag">🐘 Big Data (Spark, Hadoop)</span>
+            <span class="tech-tag">📐 Mathématiques (Probabilités, Statistiques, Algèbre linéaire)</span>
+            <span class="tech-tag">🔍 Méthodologie Agile & Qualimétrie</span>
+            <span class="tech-tag">🐙 Git & GitHub</span>
+            <span class="tech-tag">💻 Linux (Ubuntu) & Windows</span>
+        </div>
+
+        <div class="section-split">
+            <div>
+                <h2>💼 Expérience Professionnelle</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Février 2026 - Mars 2026</div>
+                    <div class="timeline-title">Responsable des données</div>
+                    <div class="timeline-location">Association Synergie Consult (FID) - Tamatave</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Juin 2025 - Juillet 2025</div>
+                    <div class="timeline-title">Certificat en Data Science</div>
+                    <div class="timeline-location">Délivré par l'ONG IDEA ACADEMY | ENI Fianarantsoa</div>
+                </div>
+            </div>
+
+            <div>
+                <h2>🎓 Éducation</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">Depuis Février 2026</div>
+                    <div class="timeline-title">Master II en Gouvernance et Ingénierie des Données</div>
+                    <div class="timeline-location">École Nationale d'Informatique (ENI) - Tanambao Fianarantsoa</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">Janvier 2025 - Août 2025</div>
+                    <div class="timeline-title">Master I en Gouvernance et Ingénierie des Données</div>
+                    <div class="timeline-location">École Nationale d'Informatique (ENI) - Tanambao Fianarantsoa</div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2024</div>
+                    <div class="timeline-title">Licence en Mathématiques et Informatique (MII)</div>
+                    <div class="timeline-location">Faculté des Sciences - Université de Fianarantsoa</div>
+                </div>
+            </div>
         </div>
 
         <h2>🚀 Projets à la une</h2>
         <div class="project-grid">
             
-            <!-- Projet 1 -->
             <div class="project-card">
                 <div>
                     <h3>🍎 Segmentation des fruits - Unsupervised ML</h3>
@@ -257,7 +343,6 @@
                 </div>
             </div>
 
-            <!-- Projet 2 -->
             <div class="project-card">
                 <div>
                     <h3>🔮 ChurnGuard - Prédiction de Churn Client</h3>
@@ -275,36 +360,64 @@
                 </div>
             </div>
 
-            <!-- Projet 3 -->
             <div class="project-card">
                 <div>
-                    <h3>📊 Dashboard Commercial Interactif</h3>
-                    <p>Modélisation de données de ventes et construction de KPIs dynamiques. Analyse approfondie des performances par produit, saisonnalité et géographie.</p>
+                    <h3>🛡️ Système de détection de fraude</h3>
+                    <p>Développement d'un modèle d'apprentissage supervisé taillé pour identifier en temps réel les transactions bancaires suspectes et réduire les faux positifs.</p>
                     <div class="project-tech">
-                        <span class="tech-tag">Power BI</span>
-                        <span class="tech-tag">DAX</span>
-                        <span class="tech-tag">Power Query</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-Learn</span>
+                        <span class="tech-tag">ENI</span>
                     </div>
                 </div>
                 <div class="btn-group">
-                    <a href="#" class="btn" style="background-color: #64748b;">En cours...</a>
+                    <a href="#" class="btn btn-disabled">Déploiement en cours...</a>
                 </div>
             </div>
 
-            <!-- Projet 4 -->
             <div class="project-card">
                 <div>
-                    <h3>🏠 Analyse Exploratoire - Airbnb</h3>
-                    <p>Traitement, nettoyage et analyse approfondie des données locatives : étude d'impact sur les prix par zone géographique et détection d'anomalies.</p>
+                    <h3>🏥 Prédiction des coûts de traitement des patients</h3>
+                    <p>Analyse prédictive des dépenses de santé réalisée au sein d'un Club de Data Science pour optimiser les budgets de prise en charge à l'aide de régressions avancées.</p>
                     <div class="project-tech">
+                        <span class="tech-tag">Data Science</span>
                         <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Matplotlib</span>
-                        <span class="tech-tag">Jupyter</span>
+                        <span class="tech-tag">Analyse Prédictive</span>
                     </div>
                 </div>
                 <div class="btn-group">
-                    <a href="https://github.com/rujleon/" class="btn btn-github" target="_blank">Explorer le Repo</a>
+                    <a href="#" class="btn btn-disabled">Déploiement en cours...</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>📉 Modélisation et simulation du crédit client</h3>
+                    <p>Projet personnel combinant statistiques, mathématiques et informatique pour évaluer, simuler et anticiper les risques de défaut de paiement client.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Modélisation</span>
+                        <span class="tech-tag">Statistiques</span>
+                        <span class="tech-tag">Simulation</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-disabled">Déploiement en cours...</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>👥 Segmentation & Analyse de satisfaction client</h3>
+                    <p>Analyse de clusters et traitement des retours clients afin d'extraire des insights d'aide à la décision commerciale pour les entreprises.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Analyse Thématique</span>
+                        <span class="tech-tag">BI</span>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-disabled">Déploiement en cours...</a>
                 </div>
             </div>
 
@@ -312,8 +425,8 @@
     </div>
 
     <footer>
-        <p>📧 <a href="mailto:rujleon99@gmail.com">rujleon99@gmail.com</a> | 🔗 <a href="https://www.linkedin.com/in/rojo-leon-narindranjanahary-989188277/" target="_blank">LinkedIn</a> | 🐙 <a href="https://github.com/rujleon/" target="_blank">GitHub</a></p>
-        <p>&copy; 2026 - Conçu avec rigueur par Rojo Leon</p>
+        <p>📧 <a href="mailto:rujleon99@gmail.com">rujleon99@gmail.com</a> | 🔗 <a href="https://linkedin.com/in/rojo-leon-narindranjanahary-989188277" target="_blank">LinkedIn</a> | 🐙 <a href="https://github.com/rujleon" target="_blank">GitHub</a></p>
+        <p>&copy; 2026 - Conçu avec rigueur par Rojo Léon</p>
     </footer>
 
 </body>
